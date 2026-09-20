@@ -110,10 +110,14 @@
         background-color: transparent;
         outline: transparent;
         color: #fff;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: border-color;
 }
 
 .subscribe-form-input:focus {
-        border: 1px solid #31d0aa;
+        border-color: 1px solid #31d0aa;
 }
 
 .subscribe-form-input::placeholder{
