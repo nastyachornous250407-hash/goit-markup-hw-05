@@ -517,7 +517,7 @@
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-form-field">
-            <label for="user_name">Name</label>
+            <label class="modal-form-label" for="user_name">Name</label>
             <div class="modal-form-container">
               <input
                 class="modal-form-input"
@@ -532,7 +532,7 @@
           </div>
 
           <div class="modal-form-field">
-            <label for="user_phone">Phone</label>
+            <label class="modal-form-label" for="user_phone">Phone</label>
             <div class="modal-form-container">
               <input
                 class="modal-form-input"
@@ -547,7 +547,7 @@
           </div>
 
           <div class="modal-form-field">
-            <label for="user_email">Email</label>
+            <label class="modal-form-label" for="user_email">Email</label>
             <div class="modal-form-container">
               <input
                 class="modal-form-input"
@@ -562,7 +562,7 @@
           </div>
 
           <div class="modal-form-field">
-            <label for="user_comment">Comment</label>
+            <label class="modal-form-label" for="user_comment">Comment</label>
             <div class="modal-form-container">
               <textarea
                 class="modal-form-comment"
@@ -580,17 +580,19 @@
               name="user_policy"
               id="user_policy"
             />
-            <label class="modal-form-label" for="user_policy">
+            <label class="modal-form-agreement-label" for="user_policy">
               <span class="modal-form-span">
                 <svg class="modal-form-chekmark" width="10" height="8">
                   <use href="./images/icons.svg#check-mark"></use>
                 </svg>
+              </span>
+              <span class="modal-form-privacy-text">
                 I accept the terms and conditions of the
                 <a
                   class="modal-form-link"
                   href="#"
                   target="_blank"
-                  rel="noopener noreferer"
+                  rel="noopener noreferrer"
                   >Privacy Policy</a
                 >
               </span>
