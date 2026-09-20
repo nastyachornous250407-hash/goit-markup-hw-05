@@ -1,0 +1,199 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: opacity, visibility;
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 4px;
+    padding: 72px 24px 24px;
+    max-width: 408px;
+    min-height: 582px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background: #fcfcfc;
+    width: 100%;
+}
+
+
+.modal-button {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(46, 47, 66, 0.4);   
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+}
+
+.modal-button-icon {
+    color: #2e2f42;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+}
+
+.modal-button:hover, 
+.modal-button:focus {
+    background-color: #404bbf;
+}
+
+.modal-button:hover .modal-button-icon,
+.modal-button:focus .modal-button-icon {
+    color: #fff;
+}
+
+.modal-text {
+    font-weight: 500;
+    color: #2e2f42;
+    width: 360px;
+    margin-bottom: 16px;
+}
+
+
+.modal-form-field {
+    margin-bottom: 8px;
+}
+
+.modal-form-field:nth-child(4) {
+    margin-bottom: 16px;
+}
+
+.modal-form-container {
+    position: relative;
+}
+
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+
+    transform: translateY(-50%);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+}
+
+.modal-form-input{
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    padding: 8px 38px;
+    width: 100%;
+    height: 40px;
+    outline: transparent;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border;
+}
+
+.modal-form-input:focus{
+    border: 1px solid #4d5ae5;
+}
+
+.modal-form-comment {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    padding: 8px 16px;
+    height: 120px;
+    margin-bottom: 0;
+    resize: none;
+    width: 100%;
+    outline: transparent;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    font-size: 12px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border;
+}
+
+.modal-form-comment:focus{
+    border: 1px solid #4d5ae5;
+}
+
+.modal-form-comment::placeholder {
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-form-label {
+    margin-bottom: 4px;
+}
+
+.modal-form-input:focus + .modal-form-icon {
+    color: #4d5ae5;
+}
+
+.modal-form-agreement {
+    margin-bottom: 24px;
+    font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+}
+
+.modal-form-span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    border: 0.88px solid rgba(46, 47, 66, 0.4);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border, background-color;
+    margin-right: 8px;
+}
+
+.chekbox:checked + .modal-form-label > .modal-form-span {
+    background-color: #404bbf;
+    border: 1px solid #404bbf;
+}
+
+.chekbox:checked+.modal-form-label > .modal-form-span .modal-form-chekmark {
+    opacity: 1;
+    
+}
+
+.modal-form-chekmark {
+    color: #fff;
+    opacity: 0;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: opacity;
+}
+
+.send-button {
+    padding: 16px 32px;
+    display: block;
+    margin: 0 auto;
+    width: 169px;
+    height: 56px;
+}
+

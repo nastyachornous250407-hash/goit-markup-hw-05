@@ -67,3 +67,55 @@
 .footer-info {
         margin-right: 120px;
 }
+
+
+.footer-form{
+        margin-left: 83px;
+}
+
+
+.subscribe-row {
+        display: flex;
+        gap: 24px;
+}
+
+.footer-form-text {
+        margin-bottom: 16px;
+        font-weight: 500;
+        color: #fff;
+}
+
+.button-subscribe {
+        padding: 8px 24px;
+        max-width: 165px;
+        box-shadow: none;
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+        background-color: #31d0aa;
+        box-shadow: none;
+}
+
+.subscribe-icon {
+        margin-left: 16px;
+}
+
+.subscribe-form-input {
+        width: 264px;
+        height: 40px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        padding: 8px 16px;
+        background-color: transparent;
+        outline: transparent;
+        color: #fff;
+}
+
+.subscribe-form-input:focus {
+        border: 1px solid #31d0aa;
+}
+
+.subscribe-form-input::placeholder{
+        color: #fff;
+}
